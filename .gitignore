@@ -1,0 +1,10 @@
+.venv
+
+.idea
+*.iml
+
+__pycache__
+log/*
+
+docs
+dist

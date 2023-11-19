@@ -1,0 +1,35 @@
+[build-system]
+requires = ['hatchling']
+build-backend = 'hatchling.build'
+
+[project]
+name = 'python-package-size'
+description = 'Learn after-install weight of any Python package including its dependencies.'
+authors = [{name = "Piotr Włodarek", email = "contact@qertoip.com"}]
+license = {file = "LICENSE"}
+version = '1.0'
+classifiers = [
+    'License :: OSI Approved :: MIT License',
+    'Development Status :: 5 - Production/Stable',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Science/Research'
+]
+readme = "README.md"
+requires-python = ">=3.8"
+
+dependencies = [
+]
+
+[project.optional-dependencies]
+dev = [
+    'twine'
+]
+
+[project.urls]
+Homepage = "http://github.com/qertoip/python-package-size"
+
+[options]
+package_dir = "python_package_size"
+
+[project.scripts]
+"python-package-size" = "python_package_size.main:main"

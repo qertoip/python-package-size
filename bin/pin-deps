@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+
+source .venv/bin/activate
+export PYTHONDONTWRITEBYTECODE=1
+
+python -m piptools compile \
+    --output-file requirements.txt \
+    --generate-hashes \
+    pyproject.toml
